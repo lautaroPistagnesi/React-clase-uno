@@ -1,6 +1,22 @@
-import { Welcome } from './components/Welcome.js';
+//import { Welcome } from './components/Welcome.js';
 
-ReactDOM.render(<Welcome nombre="Julián" />, document.getElementById('react-app'));
+//ReactDOM.render(<Welcome nombre="Julián" />, document.getElementById('react-app'));
+/* <div class="tarjeta">
+   <img
+    src="https://avatars2.githubusercontent.com/u/14203988?s=460&v=4"
+    alt="Foto de perfil"
+    class="tarjeta-img"
+    />
+   <div class="tarjeta-data">
+    <header class="tarjeta-data-header">Julián Absatz</header>
+    <span>Programador Front End</span>
+   </div>
+  </div>
+ */
+import { Perfil } from "./tarea/Tarea1"
+const app = document.getElementById("react-app")
+ReactDOM.render(Perfil, app)
+
 
 // import { Button } from './components/Button.js';
 
