@@ -15,7 +15,7 @@
   </div>
  */
   
-  export function Perfil(){
+  export function Perfil(a){
     return(
       <div className="tarjeta">
         <img
@@ -51,7 +51,21 @@
  * Si no quieren poner una foto suya, pueden tomar la URL de su imagen de perfil de github, como hice yo.
  */
 
-export function Tarjeta(props) {}
+export function Tarjeta(props) {
+  return(
+    <div className="tarjeta">
+      <img
+        src={props.imagen}
+        alt="Foto de perfil"
+        className="tarjeta-img"
+      />
+      <div className="tarjeta-data">
+        <header className="tarjeta-data-header">{props.nombre}</header>
+        <span>{props.titulo}</span>
+      </div>
+    </div>
+  )
+}
 
 /*
  * El esqueleto de este componente será nuestro primer post en un blog.

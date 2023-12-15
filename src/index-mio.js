@@ -13,9 +13,14 @@
    </div>
   </div>
  */
-import { Perfil } from "./tarea/Tarea1"
+const propiedades = {
+   nombre:"Lautaro Pistagnesi", 
+   imagen:"https://avatars.githubusercontent.com/u/123837973?s=48&v=4", 
+   titulo:"Estudiante de programacion"
+}
+import { Tarjeta } from "./tarea/Tarea1.js"
 const app = document.getElementById("react-app")
-ReactDOM.render(Perfil, app)
+ReactDOM.render(Tarjeta(propiedades), app)
 
 
 // import { Button } from './components/Button.js';
