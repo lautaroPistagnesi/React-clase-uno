@@ -12,23 +12,26 @@
     <span>Programador Front End</span>
    </div>
   </div>
- */
+ 
 const propiedades = {
-   nombre:"Lautaro Pistagnesi", 
-   imagen:"https://avatars.githubusercontent.com/u/123837973?s=48&v=4", 
-   titulo:"Estudiante de programacion"
-}
-import { Tarjeta } from "./tarea/Tarea1.js"
+   titulo:"Ardillas",
+   parrafos:["Hoy vi una ardilla.", "La ardilla era negra, era más grande que otras ardillas, tenía muchos dientes grandes y encima andaba siempre en cuatro patas, moviendo la cola.",
+               "Creo que puede haber sido un perro, dado que en Argentina no hay ardillas."],
+   autor:{
+      nombre:"Lautaro Pistagnesi", 
+      imagen:"https://avatars.githubusercontent.com/u/123837973?s=48&v=4", 
+      titulo:"Estudiante de programacion"
+}}
+import { BlogPost } from "./tarea/Tarea1.js"
 const app = document.getElementById("react-app")
-ReactDOM.render(Tarjeta(propiedades), app)
+ReactDOM.render(BlogPost(propiedades), app)
+*/
+import { Button } from './components/Button.js';
 
-
-// import { Button } from './components/Button.js';
-
-// ReactDOM.render(
-//   <Button onClick={event => alert(event.target.value)}>Hacé click!</Button>,
-//   document.getElementById('react-app')
-// );
+ReactDOM.render(
+<Button onClick={event => alert(event.target.value)}>Hacé click!</Button>,
+document.getElementById('react-app')
+);
 
 // import { Page } from './components/Page.js';
 

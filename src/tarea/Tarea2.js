@@ -12,7 +12,9 @@
  * Para obtener el valor del input en el event handler, deberán usar la propiedad `event.target.value`.
  */
 
-export function MatchNombre(props) {}
+export function MatchNombre(props) {
+    
+}
 
 /*
  * Componentes como este son usados a menudo para hacer validaciones de inputs
