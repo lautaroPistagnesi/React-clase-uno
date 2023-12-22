@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "compiler": "babel --watch src --out-dir lib --presets @babel/preset-react",
     "server": "http-server -c-1"

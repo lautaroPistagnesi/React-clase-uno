@@ -22,16 +22,20 @@ const propiedades = {
       imagen:"https://avatars.githubusercontent.com/u/123837973?s=48&v=4", 
       titulo:"Estudiante de programacion"
 }}
-import { BlogPost } from "./tarea/Tarea1.js"
-const app = document.getElementById("react-app")
-ReactDOM.render(BlogPost(propiedades), app)
 */
-import { Button } from './components/Button.js';
+const propiedades = {
+   nombre:"lautaro"
+}
+import { MatchNombre } from "./tarea/Tarea2.js"
+const app = document.getElementById("react-app")
+ReactDOM.render(MatchNombre(), app)
 
-ReactDOM.render(
-<Button onClick={event => alert(event.target.value)}>Hacé click!</Button>,
-document.getElementById('react-app')
-);
+//import { Button } from './components/Button.js';
+
+//ReactDOM.render(
+//<Button onClick={event => alert(event.target.value)}>Hacé click!</Button>,
+//document.getElementById('react-app')
+//);
 
 // import { Page } from './components/Page.js';
 
