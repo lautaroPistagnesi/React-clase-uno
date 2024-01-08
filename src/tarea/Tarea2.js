@@ -1,3 +1,4 @@
+import React from "react";
 /*
  * Este componente debe renderizar un input que cambie de clase cuando contiene tu nombre.
  * Recibirá una prop: nombre (un string con tu nombre).
@@ -12,7 +13,7 @@
  * Para obtener el valor del input en el event handler, deberán usar la propiedad `event.target.value`.
  */
 
-import { useState } from "react"
+import { useState } from "react";
 
 export function MatchNombre(props) {
     const [value, setValue] = useState("")
